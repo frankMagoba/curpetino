@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
+
 import 'model/app_state_model.dart';
 import 'product_row_item.dart';
 import 'search_bar.dart';
@@ -63,10 +64,10 @@ class _SearchTabState extends State<SearchTab> {
             Expanded(
               child: ListView.builder(
                 itemBuilder: (context, index) => ProductRowItem(
-                  index: index,
-                  product: results[index],
-                  lastItem: index == results.length - 1,
-                ),
+                      index: index,
+                      product: results[index],
+                      lastItem: index == results.length - 1,
+                    ),
                 itemCount: results.length,
               ),
             ),
