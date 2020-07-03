@@ -33,6 +33,7 @@ class CupertinoStoreHomePage extends StatelessWidget {
           ),
         ],
       ),
+      // ignore: missing_return
       tabBuilder: (context, index) {
         switch (index) {
           case 0:
